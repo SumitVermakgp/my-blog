@@ -17,11 +17,9 @@ module Authors
 
     # PATCH/PUT /elements/1
     def update
-      if @element.update(element_params)
-        redirect_to @element, notice: 'Element was successfully updated.'
-      else
-        render :edit
-      end
+      @element.update(element_params)
+      redirect_to edit_post_path(@element.post)
+
     end
 
     # DELETE /elements/1

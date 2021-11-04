@@ -24,10 +24,12 @@
   <div class="form-group">
     <%= form.label :header_image %>
     <%= form.file_field :header_image, class: 'form-control mb-2' %>
-    <% if post.header_image.present? %>
-      <%= image_tag(post.header_image, width: '100%') %>
-    <% end %>
-
+    <div class="mt-1">
+      <small>Current Image:</small>
+      <% if post.header_image.present? %>
+        <%= image_tag(post.header_image, width: '100%') %>
+      <% end %>
+    </div>
   </div>
 
 

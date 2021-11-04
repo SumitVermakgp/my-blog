@@ -5,6 +5,8 @@ module Authors
     # GET /posts
     def index
       @posts = current_author.posts
+      #ids = REDIS.zrevrange "posts/dayly/#{Date.today.to_s}", 0, 19
+      #@posts = Post.where(id: ids)
     end
 
 

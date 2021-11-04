@@ -14,6 +14,11 @@
             <% end %>
           </div>
           <div class="col-md-10">
+            <% if post.published? %>
+              <span class="badge bg-primary">Published</span>
+            <% else %>
+              <span class="badge bg-secondary">Unpublished</span>
+            <% end %>
             <h5 class='card-title text-dark mb-1'><%= post.title %></h5>
             <p class='text-secondary mb-0'><%= post.description %></p>
           </div>

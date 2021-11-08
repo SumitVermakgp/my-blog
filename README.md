@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was created during my time as a student at Code Chrysalis.
 
-Things you may want to cover:
+## Get Started
 
-* Ruby version
+```shell script
+git clone https://github.com/SumitVermakgp/my-blog.git
+cd my-blog
+```
 
-* System dependencies
+### Start Server
+```shell script
+rails s 
+```
 
-* Configuration
+Package Versions:
 
-* Database creation
+* Ruby Version: 2.6.3
 
-* Database initialization
+* Rails Version: 6.1.4.1
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Redis Server Version: 6.2.6
